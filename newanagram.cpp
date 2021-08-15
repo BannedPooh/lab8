@@ -9,6 +9,7 @@
 // Put in the required set up instructions here (include statements, etc).
 #include <iostream>
 #include "headers.h"
+#include "functions.cpp"
 using namespace std;
 int main()
 {

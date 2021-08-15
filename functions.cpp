@@ -22,7 +22,7 @@ void AString::getAString()
 void AString::cleanUp()
 {
     std::string new_string;
-    for (int i = 0; i!=StringValue.size(); i++)
+    for (std::string::size_type i = 0; i!=StringValue.size(); i++)
     {
         if (isalpha(StringValue[i]))
             new_string += tolower(StringValue[i]);
@@ -35,7 +35,7 @@ void AString::countLetters(int (arr)[26]){
     for (int i = 0; i != 26; ++i)
     {
         int count = 0;
-        int pos = 0;
+        std::string::size_type pos = 0;
         while ((pos = StringValue.find(char(i+97), pos)) != std::string::npos)
         {
             pos++;
